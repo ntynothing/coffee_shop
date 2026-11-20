@@ -1,0 +1,52 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#faf6f1;color:#2b1d14;line-height:1.5}
+header{background:#3b2616;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:12px 24px;gap:8px}
+.logo{color:#fff;font-size:22px;font-weight:bold;text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:6px}
+nav a,nav button{color:#f3e6d8;text-decoration:none;padding:8px 12px;border-radius:6px;background:none;border:0;font-size:15px;cursor:pointer}
+nav a:hover,nav button:hover,nav a.on{background:#6b4429;color:#fff}
+main{max-width:1000px;margin:0 auto;padding:24px 16px;min-height:70vh}
+footer{text-align:center;padding:16px;color:#7a6657;font-size:14px}
+h1{margin-top:0}
+.hero{text-align:center;padding:40px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #e6d9cc;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.card h3{margin:0}
+.muted{color:#7a6657;font-size:14px}
+.price{font-weight:bold;font-size:18px}
+.btn{background:#6b4429;color:#fff;border:0;border-radius:6px;padding:9px 14px;font-size:15px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{background:#4d2f1b}
+.btn.alt{background:#e6d9cc;color:#2b1d14}
+.btn.red{background:#a33a2a}
+.bar-tools{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+input,select,textarea{padding:9px;border:1px solid #cdb9a5;border-radius:6px;font-size:15px;font-family:inherit;background:#fff}
+textarea{width:100%;min-height:80px}
+form.stack{display:grid;gap:10px;max-width:420px}
+table{width:100%;border-collapse:collapse;background:#fff}
+th,td{padding:9px;border-bottom:1px solid #e6d9cc;text-align:left;font-size:15px}
+th{background:#f1e6da}
+.wrap{overflow-x:auto}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fff;border:1px solid #e6d9cc;border-radius:10px;padding:12px;margin-bottom:10px;flex-wrap:wrap}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:30px;height:30px;border:0;border-radius:6px;background:#e6d9cc;cursor:pointer;font-size:16px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{padding:9px 16px;border:1px solid #cdb9a5;background:#fff;border-radius:6px;cursor:pointer;font-size:15px}
+.tab.on{background:#6b4429;color:#fff;border-color:#6b4429}
+.msg{color:#a33a2a;min-height:22px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:24px}
+.stat b{display:block;font-size:24px}
+.bars{display:flex;align-items:flex-end;gap:8px;height:220px;background:#fff;border:1px solid #e6d9cc;border-radius:10px;padding:12px 12px 8px}
+.bar{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;font-size:11px;text-align:center}
+.bar i{display:block;width:70%;background:#6b4429;border-radius:4px 4px 0 0;min-height:2px}
+.hb{display:grid;grid-template-columns:120px 1fr 80px;gap:8px;align-items:center;margin-bottom:8px;font-size:14px}
+.hb i{display:block;height:16px;background:#b07a4f;border-radius:4px}
+.board{position:relative;height:340px;background:#fff;border:2px dashed #cdb9a5;border-radius:10px;overflow:hidden;margin-top:12px}
+.sticker{position:absolute;width:150px;min-height:90px;padding:10px;border-radius:4px;box-shadow:0 3px 8px rgba(0,0,0,.2);cursor:grab;touch-action:none;user-select:none;font-size:14px}
+.sticker button{position:absolute;top:2px;right:4px;border:0;background:none;cursor:pointer;font-size:16px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:16px;z-index:10}
+.modal>div{background:#fff;border-radius:10px;padding:20px;max-width:380px;width:100%;max-height:90vh;overflow:auto}
+.receipt{font-family:"Courier New",monospace}
+.receipt table{font-size:14px}
+.total{font-weight:bold;font-size:18px}
+@media print{body *{visibility:hidden}#receipt,#receipt *{visibility:visible}#receipt{position:absolute;left:0;top:0;width:100%}.noprint{display:none}}
